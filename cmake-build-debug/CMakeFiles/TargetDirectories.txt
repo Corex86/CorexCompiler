@@ -1,0 +1,3 @@
+/home/onur/Masaüstü/StahlCompiler/cmake-build-debug/CMakeFiles/StahlCompiler.dir
+/home/onur/Masaüstü/StahlCompiler/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/onur/Masaüstü/StahlCompiler/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,33 +1,34 @@
-# CorexCompiler - Multi-Language Compiler
-A modern and user-friendly IDE/Compiler application.
+# CodeIDE - Multi-Language Compiler
 
-## Features
+Modern ve kullanıcı dostu bir IDE/Compiler uygulaması.
 
-- ✅ Supports C++, C, Python, and JavaScript
-- ✅ Syntax highlighting
-- ✅ Line numbers
-- ✅ Real-time compilation and execution
-- ✅ Error display
-- ✅ File management (open/save)
-- ✅ Code editor (undo/redo, copy/paste)
+## Özellikler
+
+- ✅ C++, C, Python ve JavaScript desteği
+- ✅ Syntax highlighting (renkli kod vurgulama)
+- ✅ Satır numaraları
+- ✅ Gerçek zamanlı derleme ve çalıştırma
+- ✅ Hata gösterimi
+- ✅ Dosya yönetimi (aç/kaydet)
+- ✅ Kod editörü (undo/redo, copy/paste)
 - ✅ Zoom in/out
-- ✅ Dark theme
-- ✅ Status bar
-- ✅ Keyboard shortcuts
+- ✅ Karanlık tema
+- ✅ Durum çubuğu
+- ✅ Klavye kısayolları
 
-## Build
+## Derleme
 
 ### Qt Creator ile:
-1. Open CodeIDE.pro in Qt Creator
-2. Click Build > Run
+1. CodeIDE.pro dosyasını Qt Creator'da açın
+2. Build > Run tuşuna basın
 
-### Using qmake:
+### qmake ile:
 ```bash
 qmake
 make
 ```
 
-### Using CMake:
+### CMake ile:
 ```bash
 mkdir build
 cd build
@@ -35,7 +36,7 @@ cmake ..
 make
 ```
 
-### Manuel compilation:
+### Manuel derleme:
 ```bash
 # Linux/Mac
 g++ -std=c++17 main.cpp compileride.cpp codeeditor.cpp syntaxhighlighter.cpp \
@@ -46,60 +47,61 @@ g++ -std=c++17 main.cpp compileride.cpp codeeditor.cpp syntaxhighlighter.cpp \
     -o CodeIDE.exe -I%QTDIR%\include -L%QTDIR%\lib -lQt5Widgets -lQt5Gui -lQt5Core
 ```
 
-## Requirements
+## Gereksinimler
 
-- Qt 5.12 or higher
-- C++17 compatible compiler
-- g++/gcc (for running C/C++ code)
-- python3 (for running Python code)
-- node.js (for running JavaScript code)
+- Qt 5.12 veya üzeri
+- C++17 uyumlu derleyici
+- g++/gcc (C/C++ kodu çalıştırmak için)
+- python3 (Python kodu çalıştırmak için)
+- node.js (JavaScript kodu çalıştırmak için)
 
-## Usage
+## Kullanım
 
-1. Select a language (C++, C, Python, JavaScript)
-2. Write your code
-3. Press F5 or click the Run button
-4. View the output in the bottom panel
+1. Dil seçin (C++, C, Python, JavaScript)
+2. Kodunuzu yazın
+3. F5 tuşuna basın veya "Çalıştır" butonuna tıklayın
+4. Çıktıyı alt panelde görüntüleyin
 
-## Keyboard Shortcuts
+## Klavye Kısayolları
 
-- **F5**: Run code
-- **Ctrl+N**: New file
-- **Ctrl+O**: Open file
-- **Ctrl+S**: Save
-- **Ctrl+Shift+S**: Save As
-- **Ctrl+Z**: Undo
-- **Ctrl+Y**: Redo
-- **Ctrl+X**: Cut
-- **Ctrl+C**: Copy
-- **Ctrl+V**: Paste
-- **Ctrl+A**: Select all
-- **Ctrl++**: Zoom in
-- **Ctrl+-**: Zoom out
+- **F5**: Kodu çalıştır
+- **Ctrl+N**: Yeni dosya
+- **Ctrl+O**: Dosya aç
+- **Ctrl+S**: Kaydet
+- **Ctrl+Shift+S**: Farklı kaydet
+- **Ctrl+Z**: Geri al
+- **Ctrl+Y**: Yinele
+- **Ctrl+X**: Kes
+- **Ctrl+C**: Kopyala
+- **Ctrl+V**: Yapıştır
+- **Ctrl+A**: Tümünü seç
+- **Ctrl++**: Yakınlaştır
+- **Ctrl+-**: Uzaklaştır
 
-## File Structure
+## Dosya Yapısı
 
 ```
 CodeIDE/
-├── main.cpp                 # Main program
-├── compileride.h            # Main window header
-├── compileride.cpp          # Main window implementation
-├── codeeditor.h             # Code editor header
-├── codeeditor.cpp           # Code editor implementation
+├── main.cpp                 # Ana program
+├── compileride.h            # Ana pencere header
+├── compileride.cpp          # Ana pencere implementation
+├── codeeditor.h             # Kod editörü header
+├── codeeditor.cpp           # Kod editörü implementation
 ├── syntaxhighlighter.h      # Syntax highlighter header
 ├── syntaxhighlighter.cpp    # Syntax highlighter implementation
 ├── CodeIDE.pro              # Qt project file
 ├── CMakeLists.txt           # CMake build file
-└── README.md                # This file
+└── README.md                # Bu dosya
 ```
 
 ## Lisans
 
 MIT License
 
-## Contributing
+## Katkıda Bulunma
 
-Pull requests are welcome. For major changes, please open an issue first.
-## Author
+Pull request'ler kabul edilir. Büyük değişiklikler için lütfen önce bir issue açın.
 
-Corex86 Team - 2025
+## Yazar
+
+CodeIDE Team - 2025
